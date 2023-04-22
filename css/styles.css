@@ -1,0 +1,249 @@
+:root {
+  /* Font */
+  --primary-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+
+  /* Color */
+
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-navy-blue-modal: #2e2f42;
+  --color-grey: #2e2f42;
+  --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
+
+  /* Button text color*/
+  --primary-color-text: #ffffff;
+
+  /* Button text background*/
+
+  --primary-color-background: #4d5ae5;
+}
+
+/* Hiden elements */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Font elements */
+.header-main {
+  color: var(--color-white);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.header-section {
+  color: var(--color-navy-blue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* Main properties */
+body {
+  font-family: var(--primary-font, sans-serif);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+  background-color: var(--color-white);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Header */
+
+.header {
+}
+
+.header-logo {
+  font-family: var(--logo-font, sans-serif);
+  color: var(--color-iris);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.half-header {
+  color: var(--color-navy-blue);
+}
+
+.nav-list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-navy-blue);
+}
+
+.nav-list-item:hover,
+.nav-list-item:focus {
+  color: var(--color-ocean);
+}
+.address {
+  font-style: normal;
+}
+.addres-contacts {
+  font-size: 16px;
+  color: var(--color-slate);
+}
+
+.addres-contacts[href='mailto:info@devstudio.com']:hover,
+.addres-contacts[href='mailto:info@devstudio.com']:focus {
+  font-size: 16px;
+  color: var(--color-ocean);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--color-navy-blue);
+}
+
+.btn {
+  font-family: var(--primary-font);
+  color: var(--primary-color-text);
+
+  background-color: var(--primary-color-background);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--color-ocean);
+}
+
+/* features-section */
+
+.features-section {
+}
+.features-list {
+}
+
+.features-name {
+  color: var(--color-navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* Workspace */
+
+.workspace {
+}
+
+.workspace-img-list {
+}
+
+.workspace-img-item {
+}
+
+/* Team members setion */
+
+.cards {
+  background-color: var(--color-cloud);
+}
+
+.cards-list {
+}
+
+.card-item {
+  background-color: var(--color-white);
+}
+
+.member-name {
+  color: var(--color-navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.member-deskr {
+  text-align: center;
+}
+
+/* Footer */
+
+.gen-info {
+  background-color: var(--color-navy-blue);
+}
+
+.info-logo {
+  font-family: var(--logo-font, sans-serif);
+  color: var(--color-iris);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.info-logo-half {
+  color: var(--color-cloud);
+}
+
+.push-text {
+  color: var(--color-cloud);
+}
+
+/* Portfolio */
+
+.btn-filter {
+  color: var(--color-iris);
+  background-color: var(--color-cloud);
+}
+
+.btn-filter:hover,
+.btn-filter:focus,
+.btn-filter:active {
+  color: var(--color-white);
+}
+.example-item {
+  color: inherit;
+}
+.example-name {
+  color: var(--color-navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
