@@ -112,14 +112,14 @@ body {
 /* Header */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 23px;
   border-bottom: 1px solid var(--color-cornflower);
 }
 .header-container {
   display: flex;
   align-items: center;
 }
+
+/* Navigation */
 
 .header-logo {
   font-family: var(--logo-font, sans-serif);
@@ -136,10 +136,10 @@ body {
   color: var(--color-navy-blue);
 }
 
-/* Navigation */
-
 .header-nav {
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .header-nav-list {
@@ -153,6 +153,8 @@ body {
   line-height: 1.5;
   color: var(--color-navy-blue);
   display: block;
+  padding-top: 24px;
+  padding-bottom: 23px;
 }
 
 .nav-list-item:hover,
