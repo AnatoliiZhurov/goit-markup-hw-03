@@ -42,8 +42,22 @@
   overflow: hidden;
 }
 
+/* Display/margin-resets */
+
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 /* Font elements */
-.header-main {
+.header-main-font {
   color: var(--color-white);
   font-size: 56px;
   font-weight: 700;
@@ -74,6 +88,8 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -81,9 +97,22 @@ body {
   font-style: normal;
 }
 
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /* Header */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--color-cornflower);
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -94,10 +123,22 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
-.half-header {
+.half-header-logo {
   color: var(--color-navy-blue);
+}
+
+/* Navigation */
+
+.header-nav {
+  margin-right: auto;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 40px;
 }
 
 .nav-list-item {
@@ -105,18 +146,27 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-navy-blue);
+  display: block;
 }
 
 .nav-list-item:hover,
 .nav-list-item:focus {
   color: var(--color-ocean);
 }
+
+/* Contacts */
 .address {
   font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 .addres-contacts {
   font-size: 16px;
   color: var(--color-slate);
+  display: block;
 }
 
 .addres-contacts[href='mailto:info@devstudio.com']:hover,
@@ -127,8 +177,19 @@ body {
 
 /* Hero */
 
+.hero-container {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
 .hero {
   background-color: var(--color-navy-blue);
+}
+
+.hero-invite {
+  margin-bottom: 48px;
+  width: 496px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .btn {
@@ -141,6 +202,15 @@ body {
   letter-spacing: 0.04em;
   line-height: 1.5;
   cursor: pointer;
+}
+
+.hero-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  min-height: 56px;
+  border-width: 0;
+  border-radius: 4px;
 }
 .btn:hover,
 .btn:focus,
@@ -185,6 +255,11 @@ body {
 
 .card-item {
   background-color: var(--color-white);
+  width: 264px;
+}
+
+.card-info {
+  padding: 16px 32px;
 }
 
 .member-name {
