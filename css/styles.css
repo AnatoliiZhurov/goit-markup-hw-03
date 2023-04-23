@@ -186,17 +186,15 @@ body {
 /* Hero */
 
 .hero-container {
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 .hero-section {
   background-color: var(--color-navy-blue);
-  padding: 0;
+  padding: 188px 0;
 }
 
 .hero-invite {
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -218,7 +216,7 @@ body {
   margin: 0 auto;
   min-width: 169px;
   min-height: 56px;
-  border-width: 0;
+  border: none;
   border-radius: 4px;
 }
 .btn:hover,
@@ -260,6 +258,7 @@ body {
 .workspace-img-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .workspace-img-item {
@@ -275,6 +274,7 @@ body {
 .cards-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .card-item {
@@ -285,7 +285,7 @@ body {
 }
 
 .card-info {
-  padding: 16px 32px;
+  padding: 32px 16px;
 }
 
 .member-name {
@@ -304,10 +304,6 @@ body {
 
 /* Footer */
 
-.info-container {
-  width: 264px;
-  margin-right: auto;
-}
 .gen-info {
   background-color: var(--color-navy-blue);
   padding-top: 100px;
@@ -322,8 +318,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: block;
-  margin-bottom: 19px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .info-logo-half {
@@ -331,10 +327,15 @@ body {
 }
 
 .push-text {
+  max-width: 264px;
   color: var(--color-cloud);
 }
 
 /* Portfolio Main */
+
+.gallery-section {
+  padding: 96px 0 120px;
+}
 
 .filter-list {
   display: flex;
@@ -347,7 +348,7 @@ body {
   background-color: var(--color-cloud);
   padding: 12px 24px;
   min-height: 48px;
-  border: 2px solid var(--color-cornflower);
+  border: 1px solid var(--color-cornflower);
   border-radius: 4px;
 }
 
@@ -356,11 +357,11 @@ body {
 .project-examples-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   row-gap: 48px;
-  flex-basis: calc((100% - 24px * 2) / 3);
+  column-gap: 24px;
 }
 .project-list-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .img-gallery-item {
@@ -370,12 +371,11 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border: 1px solid var(--color-cornflower);
 }
 
 .example-item {
   color: inherit;
-  border: 1px solid var(--color-cornflower);
-  display: block;
 }
 
 .example-name {
@@ -391,4 +391,5 @@ body {
 .btn-filter:focus,
 .btn-filter:active {
   color: var(--color-white);
+  border: 1px solid transparent;
 }
