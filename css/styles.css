@@ -73,6 +73,7 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
 }
 
 /* Main properties */
@@ -101,6 +102,11 @@ body {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* Header */
@@ -181,8 +187,9 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
 }
-.hero {
+.hero-section {
   background-color: var(--color-navy-blue);
+  padding: 0;
 }
 
 .hero-invite {
@@ -222,7 +229,15 @@ body {
 
 .features-section {
 }
+
 .features-list {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.features-item {
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .features-name {
@@ -231,17 +246,22 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 /* Workspace */
 
-.workspace {
+.section-workspace {
+  padding-top: 0;
 }
 
 .workspace-img-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .workspace-img-item {
+  border: 1px solid var(--color-cornflower);
 }
 
 /* Team members setion */
@@ -251,11 +271,15 @@ body {
 }
 
 .cards-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-item {
   background-color: var(--color-white);
-  width: 264px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-info {
@@ -269,6 +293,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .member-deskr {
@@ -277,8 +302,14 @@ body {
 
 /* Footer */
 
+.info-container {
+  width: 264px;
+  margin-right: auto;
+}
 .gen-info {
   background-color: var(--color-navy-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .info-logo {
@@ -289,7 +320,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
+  display: block;
+  margin-bottom: 19px;
 }
 
 .info-logo-half {
@@ -300,25 +332,61 @@ body {
   color: var(--color-cloud);
 }
 
-/* Portfolio */
+/* Portfolio Main */
 
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 .btn-filter {
   color: var(--color-iris);
   background-color: var(--color-cloud);
+  padding: 12px 24px;
+  min-height: 48px;
+  border: 2px solid var(--color-cornflower);
+  border-radius: 4px;
 }
 
-.btn-filter:hover,
-.btn-filter:focus,
-.btn-filter:active {
-  color: var(--color-white);
+/* Projects gallery */
+
+.project-examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 48px;
+  flex-basis: calc((100% - 24px * 2) / 3);
 }
+.project-list-item {
+}
+
+.img-gallery-item {
+}
+
+.project-card-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
 .example-item {
   color: inherit;
+  border: 1px solid var(--color-cornflower);
+  display: block;
 }
+
 .example-name {
   color: var(--color-navy-blue);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.btn-filter:hover,
+.btn-filter:focus,
+.btn-filter:active {
+  color: var(--color-white);
 }

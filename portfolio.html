@@ -53,11 +53,11 @@
 
     <!-- Main field -->
     <main>
-      <section>
+      <section class="section">
         <div class="container">
           <h1 hidden>Projects gallery</h1>
           <!-- Filters -->
-          <ul class="list">
+          <ul class="list filter-list">
             <li>
               <button type="button" class="btn btn-filter">All</button>
             </li>
@@ -74,12 +74,14 @@
               <button type="button" class="btn btn-filter">Marketing</button>
             </li>
           </ul>
-          <ul class="list project-examples">
-            <li>
+          <ul class="list project-examples-list">
+            <li class="project-list-item">
               <a href="" class="link example-item">
                 <img src="./images/row-a/img.jpg" alt="Banking App" width="360" />
-                <h2 class="example-name">Banking App Interface Concept</h2>
-                <p class="project-type">App</p>
+                <div class="project-card-info">
+                  <h2 class="example-name">Banking App Interface Concept</h2>
+                  <p class="project-type">App</p>
+                </div>
               </a>
             </li>
             <li>
@@ -89,16 +91,27 @@
                   alt="Cashless Payment"
                   width="360"
                   height="300"
+                  class="img-gallery-item"
                 />
-                <h2 class="example-name">Cashless Payment</h2>
-                <p class="project-type">Marketing</p>
+                <div class="project-card-info">
+                  <h2 class="example-name">Cashless Payment</h2>
+                  <p class="project-type">Marketing</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="" class="link example-item">
-                <img src="./images/row-a/img-2.jpg" alt="Meditation App" width="360" height="300" />
-                <h2 class="example-name">Meditation App</h2>
-                <p class="project-type">App</p>
+                <img
+                  src="./images/row-a/img-2.jpg"
+                  alt="Meditation App"
+                  width="360"
+                  height="300"
+                  class="img-gallery-item"
+                />
+                <div class="project-card-info">
+                  <h2 class="example-name">Meditation App</h2>
+                  <p class="project-type">App</p>
+                </div>
               </a>
             </li>
             <li>
@@ -108,9 +121,12 @@
                   alt="dashboard of the car"
                   width="360"
                   height="300"
+                  class="img-gallery-item"
                 />
-                <h2 class="example-name">Taxi Service</h2>
-                <p class="project-type">Marketing</p>
+                <div class="project-card-info">
+                  <h2 class="example-name">Taxi Service</h2>
+                  <p class="project-type">Marketing</p>
+                </div>
               </a>
             </li>
             <li>
@@ -120,16 +136,27 @@
                   alt="moon on the screens"
                   width="360"
                   height="300"
+                  class="img-gallery-item"
                 />
-                <h2 class="example-name">Screen Illustrations</h2>
-                <p class="project-type">Design</p>
+                <div class="project-card-info">
+                  <h2 class="example-name">Screen Illustrations</h2>
+                  <p class="project-type">Design</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="" class="link example-item">
-                <img src="./images/row-b/img-2.jpg" alt="live talking" width="360" height="300" />
-                <h2 class="example-name">Online Courses</h2>
-                <p class="project-type">Marketing</p>
+                <img
+                  src="./images/row-b/img-2.jpg"
+                  alt="live talking"
+                  width="360"
+                  height="300"
+                  class="img-gallery-item"
+                />
+                <div class="project-card-info">
+                  <h2 class="example-name">Online Courses</h2>
+                  <p class="project-type">Marketing</p>
+                </div>
               </a>
             </li>
             <li>
@@ -139,23 +166,42 @@
                   alt="Instagram Stories Concept"
                   width="360"
                   height="300"
+                  class="img-gallery-item"
                 />
-                <h2 class="example-name">Instagram Stories Concept</h2>
-                <p class="project-type">Design</p>
+                <div class="project-card-info">
+                  <h2 class="example-name">Instagram Stories Concept</h2>
+                  <p class="project-type">Design</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="" class="link example-item">
-                <img src="./images/row-c/img-1.jpg" alt="woman with bag" width="360" height="300" />
-                <h2 class="example-name">Organic Food</h2>
-                <p class="project-type">Web Site</p>
+                <img
+                  src="./images/row-c/img-1.jpg"
+                  alt="woman with bag"
+                  width="360"
+                  height="300"
+                  class="img-gallery-item"
+                />
+                <div class="project-card-info">
+                  <h2 class="example-name">Organic Food</h2>
+                  <p class="project-type">Web Site</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="" class="link example-item">
-                <img src="./images/row-c/img-2.jpg" alt="coffee paiting" width="360" height="300" />
-                <h2 class="example-name">Fresh Coffee</h2>
-                <p class="project-type">Web Site</p>
+                <img
+                  src="./images/row-c/img-2.jpg"
+                  alt="coffee paiting"
+                  width="360"
+                  height="300"
+                  class="img-gallery-item"
+                />
+                <div class="project-card-info">
+                  <h2 class="example-name">Fresh Coffee</h2>
+                  <p class="project-type">Web Site</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -165,13 +211,15 @@
     <!-- Reference Information -->
     <footer class="gen-info">
       <div class="container">
-        <a href="./index.html" class="info-logo link"
-          >Web<span class="info-logo-half">Studio</span></a
-        >
-        <p class="push-text">
-          Increase the flow of customers and sales for your business with digital marketing & growth
-          solutions.
-        </p>
+        <div class="info-container">
+          <a href="./index.html" class="link info-logo"
+            >Web<span class="info-logo-half">Studio</span></a
+          >
+          <p class="push-text">
+            Increase the flow of customers and sales for your business with digital marketing &
+            growth solutions.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
